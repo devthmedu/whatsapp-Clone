@@ -25,7 +25,7 @@ O projeto visa fornecer uma interface visualmente semelhante ao WhatsApp Web, co
   - Imagem de perfil
   - Barra de ferramentas com ícones
   - Barra de pesquisa
-  - Notificação de conectividade![1](https://github.com/user-attachments/assets/4f9050d0-334c-4940-83b1-93dd1a498280)
+  - Notificação de conectividade!
 
   - Lista de bate-papos
   
