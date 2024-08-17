@@ -1,0 +1,148 @@
+.chat-tile {
+  display: flex;
+  color: var(--text-secondary);
+  height: 72px;
+  position: relative;
+  margin-bottom: 0px;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.chat-tile:hover {
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.chat-tile > img {
+  height: 49px;
+  width: 49px;
+  border-radius: 50%;
+  margin: 0px 5px 0px 13px;
+}
+
+.chat-tile::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 0.1px;
+  background-color: var(--border-color);
+}
+
+.chat-tile-details {
+  flex-grow: 1;
+  padding-right: 15px;
+}
+
+.chat-tile-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-tile-title > :first-child {
+  color: var(--text-primary-strong);
+  font-size: 17px;
+}
+
+.chat-tile-title > :nth-child(2) {
+  font-size: 12px;
+}
+
+.chat-tile-subtitle {
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+}
+
+.chat-tile-menu {
+  display: none;
+}
+
+.chat-tile:hover > .chat-tile-details > .chat-tile-subtitle ~ .chat-tile-menu {
+  display: inline-flex;
+  background-color: red;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 1024px (tablets) */
+@media (max-width: 1024px) {
+  .chat-tile {
+    height: 60px;
+  }
+
+  .chat-tile > img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .chat-tile-title > :first-child {
+    font-size: 15px;
+  }
+
+  .chat-tile-title > :nth-child(2) {
+    font-size: 10px;
+  }
+}
+
+/* Para telas menores que 768px (dispositivos móveis) */
+@media (max-width: 768px) {
+  .chat-tile {
+    height: 50px;
+    padding: 8px;
+    column-gap: 8px;
+  }
+
+  .chat-tile > img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .chat-tile-title > :first-child {
+    font-size: 14px;
+  }
+
+  .chat-tile-title > :nth-child(2) {
+    font-size: 9px;
+  }
+
+  .chat-tile-subtitle {
+    font-size: 12px;
+  }
+
+  .chat-tile-menu {
+    display: none; /* Ocultar o menu para não ocupar espaço em telas pequenas */
+  }
+}
+
+/* Para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+  .chat-tile {
+    height: 45px;
+    padding: 6px;
+    column-gap: 6px;
+  }
+
+  .chat-tile > img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .chat-tile-title > :first-child {
+    font-size: 12px;
+  }
+
+  .chat-tile-title > :nth-child(2) {
+    font-size: 8px;
+  }
+
+  .chat-tile-subtitle {
+    font-size: 10px;
+    white-space: normal; /* Permitir quebra de linha para o subtitle em telas pequenas */
+  }
+
+  .chat-tile-menu {
+    display: none; /* Ocultar o menu para não ocupar espaço em telas pequenas */
+  }
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible"
+					content="IE=edge">
+		<meta name="viewport"
+					content="width=device-width, initial-scale=1.0">
+		
+		<title>WhatsApp</title>
+		<link rel="stylesheet"
+					href="styles/core.css">
+		<link rel="stylesheet"
+					href="styles/style.css">
+		<link rel="stylesheet"
+					href="styles/sidebar.css">
+		<link rel="stylesheet"
+					href="styles/chat-window.css">
+		<link rel="stylesheet"
+					href="styles/chat-tile.css">
+		<link rel="stylesheet"
+					href="styles/chat-message.css">
+					<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+	</head>
+
+	<body>
+				<main>
+					<!-- Barra Lateral -->
+					<aside id="sidebar">
+						<header id="sidebar-header">
+							<div class="profile-container">
+								<img src="./images/perfil.png"
+										 alt="Imagem de perfil"
+										 class="avatar"
+										 id="profile-image">
+								<span class="profile-text">Conversas</span>
+							</div>
+				
+							<div class="toolbar">
+								<img src="icons/communities.svg"
+										 alt="Comunidades"
+										 class="icon">
+								<img src="icons/status.svg"
+										 alt="Status"
+										 class="icon">
+								<img src="icons/new-chat.svg"
+										 alt="Novo chat"
+										 class="icon">
+								<div class="dropdown">
+									<img src="icons/menu.svg"
+											 alt="Menu"
+											 class="icon dropdown-button">
+									<div class="dropdown-content">
+										<a href="#">Novo grupo</a>
+										<a href="#">Nova comunidade</a>
+										<a href="#">Arquivados</a>
+										<a href="#">Mensagens destacadas</a>
+										<a href="#">Selecionar conversas</a>
+										<a href="#">Configurações</a>
+										<a href="#">Sair</a>
+									</div>
+								</div>
+							</div>
+						</header>
+				<form id="search-toolbar">
+					<input type="search"
+								 name=""
+								 id="search-input"
+								 placeholder="Pesquisar ou iniciar um novo chat">
+					<img src="icons/filter.svg"
+							 alt="Filtrar"
+							 class="icon">
+				</form>
+				<div class="connectivity-notification">
+					<img src="icons/warning.svg"
+							 alt="Aviso de desconexão">
+					<div>
+						<div class="connectivity-notification-title">
+							Computador não conectado
+						</div>
+						<span>
+							Verifique se seu computador está conectado à Internet
+						</span>
+					</div>
+				</div>
+				<section id="sidebar-contents">
+
+					<div class="chat-tile">
+						<img src="./images/images.webp"
+								 alt="Imagem do chat"
+								 class="chat-tile-avatar">
+						<div class="chat-tile-details">
+							<div class="chat-tile-title">
+								<span>Ana Maria Braga</span>
+								<span>19:35</span>
+							</div>
+							<div class="chat-tile-subtitle">
+								<span>Ta online e não me responde </span>
+								<span class="chat-tile-menu">
+									<img src="icons/pin.svg"
+											 alt="Fixar"
+											 class="pin">
+								</span>
+							</div>
+						</div>
+					</div>
+					<div id="chats-list">
+						<div class="chat-tile">
+							<img src="./images/grupo.png"
+									 alt="Imagem do chat"
+									 class="chat-tile-avatar">
+							<div class="chat-tile-details">
+								<div class="chat-tile-title">
+									<span>Dev Networking 💻
+									</span>
+									<span>19:20</span>
+								</div>
+								<div class="chat-tile-subtitle">
+									<span>Você: Oi! Como você está?</span>
+									<span class="chat-tile-menu">
+										<img src="icons/pin.svg"
+												 alt="Fixar"
+												 class="pin">
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="chat-tile">
+							<img src="https://picsum.photos/id/104/50"
+									 alt="Imagem do chat"
+									 class="chat-tile-avatar">
+							<div class="chat-tile-details">
+								<div class="chat-tile-title">
+									<span>Família</span>
+									<span>18:00</span>
+								</div>
+								<div class="chat-tile-subtitle">
+									<span>Papai: Você deve estar brincando</span>
+									<span class="chat-tile-menu">
+										<img src="icons/pin.svg"
+												 alt="Fixar"
+												 class="pin">
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="chat-tile">
+							<img src="./images/amor.png"
+									 alt="Imagem do chat"
+									 class="chat-tile-avatar">
+							<div class="chat-tile-details">
+								<div class="chat-tile-title">
+									<span>Amor 💖</span>
+									<span>18:21</span>
+								</div>
+								<div class="chat-tile-subtitle">
+									<span>Vamos tomar uma cervejinha? </span>
+									<span class="chat-tile-menu">
+										<img src="icons/pin.svg"
+												 alt="Fixar"
+												 class="pin">
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="chat-tile">
+							<img src="./images/sister.png"
+									 alt="Imagem do chat"
+									 class="chat-tile-avatar">
+							<div class="chat-tile-details">
+								<div class="chat-tile-title">
+									<span>Sister</span>
+									<span>18:20</span>
+								</div>
+								<div class="chat-tile-subtitle">
+									<span>Na verdade me arruma 8.000 para eu pagar o agiota?  </span>
+									<span class="chat-tile-menu">
+										<img src="icons/pin.svg"
+												 alt="Fixar"
+												 class="pin">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</aside>
+			<!-- Fim da Barra Lateral -->
+
+			<!-- Janela de Chat -->
+			<section id="chat-window">
+				<header id="chat-window-header">
+					<img src="./images/grupo.png"
+							 alt="Imagem de perfil"
+							 class="avatar"
+							 id="profile-image">
+					<div id="active-chat-details">
+						<h3>Dev Networking 💻
+						</h3>
+						<div class="info">Você e 69 outros</div>
+					</div>
+					<img src="icons/search.svg"
+							 alt="Buscar"
+							 class="icon">
+					<div class="dropdown">
+						<img src="icons/menu.svg"
+								 alt="Menu"
+								 class="icon dropdown-button">
+						<div class="dropdown-content contact-menu">
+							<a href="#">Informações de contato</a>
+							<a href="#">Selecionar mensagens</a>
+							<a href="#">Fechar chat</a>
+							<a href="#">Silenciar notificações</a>
+							<a href="#">Mensagens desaparecendo</a>
+							<a href="#">Limpar mensagens</a>
+							<a href="#">Excluir chat</a>
+							<a href="#">Denunciar</a>
+							<a href="#">Bloquear</a>
+						</div>
+					</div>
+				</header>
+				<div id="chat-window-contents">
+
+					<div class="datestamp-container">
+						<span class="datestamp">
+							17/08/2023
+						</span>
+					</div>
+					<!-- Grupo de Mensagens 1 -->
+					<div class="chat-message-group">
+						<img src="https://picsum.photos/50"
+								 alt="Avatar do remetente"
+								 class="chat-message-avatar">
+						<div class="chat-messages">
+							<div class="chat-message-container">
+								<div class="chat-message chat-message-first">
+									<div class="chat-message-sender">Alex</div>
+									Olá, como você está?
+									<span class="chat-message-time">7:22</span>
+								</div>
+								<div class="emoji-toolbar">
+									<img src="icons/emoji.svg"
+											 alt="Reações"
+											 class="icon reaction-button">
+									<div class="reaction-emoji-selector">
+										<a href="#"
+											 class="icon">👍🏻</a>
+										<a href="#"
+											 class="icon">💖</a>
+										<a href="#"
+											 class="icon">😂</a>
+										<a href="#"
+											 class="icon"></a>
+										<a href="#"
+											 class="icon"></a>
+										<a href="#"
+											 class="icon"></a>
+									</div>
+								</div>
+							</div>
+							<div class="chat-message">
+								Algum projeto interessante em andamento?
+								<span class="chat-message-time">7:22</span>
+							</div>
+							<div class="chat-message">
+								Estou pensando em testar uma nova API REST que encontrei.
+								<span class="chat-message-time">7:23</span>
+							</div>
+						</div>
+					</div>
+
+				<!-- Grupo de Mensagens 2 -->
+				<div class="chat-message-group">
+					<img src="https://picsum.photos/id/102/50"
+							 alt="Avatar do remetente"
+							 class="chat-message-avatar">
+					<div class="chat-messages">
+						<div class="chat-message-container">
+							<div class="chat-message chat-message-first">
+								<div class="chat-message-sender">Lucas</div>
+								Com certeza, cara!
+								<span class="chat-message-time">7:30</span>
+							</div>
+							<div class="emoji-toolbar">
+								<img src="icons/emoji.svg"
+										 alt="Reações"
+										 class="icon reaction-button">
+								<div class="reaction-emoji-selector">
+									<a href="#"
+										 class="icon">👍🏻</a>
+									<a href="#"
+										 class="icon">💖</a>
+									<a href="#"
+										 class="icon">😂</a>
+									<a href="#"
+										 class="icon"></a>
+									<a href="#"
+										 class="icon"></a>
+									<a href="#"
+										 class="icon"></a>
+								</div>
+							</div>
+						</div>
+						<div class="chat-message">
+							Estava pensando em maratonar uns tutoriais de React na sexta-feira.
+							<span class="chat-message-time">7:31</span>
+						</div>
+						<div class="chat-message">
+							Se precisar de ajuda, é só me chamar!
+							<span class="chat-message-time">7:32</span>
+						</div>
+					</div>
+				</div>
+
+			<!-- Grupo de Mensagens 3 -->
+			<div class="chat-message-group">
+				<img src="https://picsum.photos/id/104/50"
+						 alt="Avatar do remetente"
+						 class="chat-message-avatar">
+				<div class="chat-messages">
+					<div class="chat-message-container">
+						<div class="chat-message chat-message-first">
+							<div class="chat-message-sender">Marco</div>
+							Vamos revisar aquele código no sábado?
+							<span class="chat-message-time">7:40</span>
+						</div>
+						<div class="emoji-toolbar">
+							<img src="icons/emoji.svg"
+									 alt="Reações"
+									 class="icon reaction-button">
+							<div class="reaction-emoji-selector">
+								<a href="#"
+									 class="icon">👍🏻</a>
+								<a href="#"
+									 class="icon">💖</a>
+								<a href="#"
+									 class="icon">😂</a>
+								<a href="#"
+									 class="icon"></a>
+								<a href="#"
+									 class="icon"></a>
+								<a href="#"
+									 class="icon"></a>
+							</div>
+						</div>
+					</div>
+					<div class="chat-message">
+						Eu adoraria.
+						<span class="chat-message-time">7:41</span>
+					</div>
+					<div class="chat-message">
+						Qual parte do projeto você quer focar?
+						<span class="chat-message-time">7:42</span>
+					</div>
+				</div>
+			</div>
+
+				<footer id="chat-footer">
+					<div id="footer-actions">
+						<img src="icons/attachment.svg"
+								 alt="Anexar"
+								 class="icon">
+						<img src="icons/emoji.svg"
+								 alt="Emoji"
+								 class="icon">
+						<img src="icons/mic.svg"
+								 alt="Microfone"
+								 class="icon">
+					</div>
+					<form id="chat-footer-form">
+						<input type="text"
+									 id="message-input"
+									 placeholder="Digite uma mensagem">
+						<button type="submit"
+										id="send-button"> <img src="./icons/system-uicons--paper-plane-alt.svg" alt=""></button>
+					</form>
+				</footer>
+			</section>
+			<!-- Fim da Janela de Chat -->
+		</main>
+	</body>
+
+</html>
